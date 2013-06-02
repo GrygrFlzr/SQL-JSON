@@ -1,6 +1,6 @@
 Assumed table structure:
 
-```sql
+```
 +------+------------------+------------+
 | P_Id | MinecraftVersion | ModVersion |
 +------+------------------+------------+
@@ -19,3 +19,12 @@ JSON Structure:
 	"ModVersion":"1.31"
 }
 ```
+
+To use, request the api.php file with an *mcver* variable that indicates the version of Minecraft in use.
+
+Example usage:
+```
+http://www.example.com/api.php?mcver=1.5.2
+```
+
+This variable is optional. If you omit the version, it will return the latest version of Minecraft supported.
